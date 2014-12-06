@@ -1,0 +1,8 @@
+.DS_Store
+atlassian-ide-plugin.xml
+node_modules/
+platforms/**
+www/**
+.idea
+.cordova
+.metadata/

@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+    head
+        title Grunt, Jade and Stylus Example
+        meta(charset="utf-8")
+        meta(name="format-detection", content="telephone=no")
+        meta(name="apple-mobile-web-app-capable", content="yes")
+        meta(name="apple-mobile-web-app-status-bar-style", content="black-translucent")
+        meta(name="viewport", content="initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, width=640")
+        link(href="css/app.css", rel="stylesheet")
+    body
+        #bg
+        script.
+            var env={};
+            <environment></environment>
+        h1 Grunt BoilerPlate
+        h2 Current environment is:
+        script.
+            var h2Element = document.getElementsByTagName('h2')[0];
+            h2Element.innerHTML += ' ' + env.ENV;
+            document.body.classList.add(env.ENV);
